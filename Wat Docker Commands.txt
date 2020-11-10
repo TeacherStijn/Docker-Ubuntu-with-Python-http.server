@@ -17,4 +17,14 @@ docker build -t stijnjanssen/ubuntupython:1 . (dockerfile locatie)
 docker run -ti -p8000:8000 <image_id> 
 (runnen die je hebt / op hub staat)
 
-docker inspect voor ip 192.168.99.106
+docker inspect voor ip...
+
+
+docker tag <image_id> ubuntupython.azurecr.io/ubuntupython
+óf
+docker tag <image_id> stijnjanssen/ubuntupython
+dán
+(ná login op acr):
+docker push ubuntupython.azurecr.io/ubuntupython
+(of na login op docker hub):
+docker push stijnjanssen/ubuntupython
