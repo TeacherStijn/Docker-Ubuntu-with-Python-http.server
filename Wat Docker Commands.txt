@@ -25,6 +25,9 @@ docker tag <image_id> ubuntupython.azurecr.io/ubuntupython
 docker tag <image_id> stijnjanssen/ubuntupython
 dán
 (ná login op acr):
+(om te kunnne draaien):
+az acr update -n ubuntupython --admin-enabled true
+
 docker push ubuntupython.azurecr.io/ubuntupython
 (of na login op docker hub):
 docker push stijnjanssen/ubuntupython
