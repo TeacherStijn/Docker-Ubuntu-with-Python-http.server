@@ -1,0 +1,20 @@
+docker ps -all
+docker rm <container_id>
+docker images
+
+docker run -t -d <image_id>
+CONTAINER STOPT NORMAAL,
+BLIJFT RUNNEN met -d
+
+docker ps -all
+UP! :D
+
+docker exec -it <names> /bin/bash
+BIN/BASH VOOR EEN COMMANDLINE (= meer opties)
+
+docker build -t stijnjanssen/ubuntupython:1 . (dockerfile locatie)
+
+docker run -ti -p8000:8000 <image_id> 
+(runnen die je hebt / op hub staat)
+
+docker inspect voor ip 192.168.99.106
